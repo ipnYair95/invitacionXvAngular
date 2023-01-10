@@ -1,0 +1,198 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
+html,
+body {
+  font-family: "Sofia", sans-serif !important;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+body{
+  overflow-y: hidden !important;
+}
+
+
+/* FIREFOX*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tip-color) white;
+}
+
+
+
+
+:root {
+  --color: rgb(255, 182, 120);
+  --color-transparent: rgb(255, 182, 120, 70%);
+  --color-gray: #f5576c;
+}
+
+
+section {
+  padding: 1rem;
+}
+
+
+.btn-primary {
+  background: var(--color) !important;
+  border: 1px 1px var(--color) !important;
+  color: #000 !important;
+
+  &:hover {
+    background: 1px 1px var(--color) !important;
+  }
+}
+
+
+.navbar {
+	background: rgb(210 155 253 / 50%) !important;
+	margin-top: -8px !important;
+}
+
+.navbar-toggler{
+  line-height: 1;
+  color: #000 !important;
+  background-color: transparent;
+  border: none !important;
+}
+
+.pulser{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #818078;
+    background-color: #fcfcfa;
+  }
+}
+
+
+.pulser{
+  box-shadow: 0 0 0 0 var(--color);
+  transform: scale(1);
+  animation: pulse2 2s infinite;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.90);
+    box-shadow: 0 0 0 0 var(--color);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px #7ca1ff00;
+  }
+
+  100% {
+    transform: scale(0.90);
+    box-shadow: 0 0 0 0 #5361fb00;
+  }
+}
+
+
+
+/*  Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.btn-group-custom{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    margin: 1rem 0px;
+  }
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+}
+
+
+@media (min-width: 992px) {
+  .btn-group-custom{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+}
+
+
+@media (min-width: 1400px) {
+}

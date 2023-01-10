@@ -1,0 +1,10 @@
+<div class="card-gif" [ngStyle]=" isCollapse ? {'height':'200px'} : {'height':'auto'} "
+  (click)="isCollapse = !isCollapse">
+  <i class="fa fa-5x rotate" aria-hidden="true" [ngClass]="gif.icon"></i>
+
+  <h3 class="mt-2 "> {{ gif.title }} </h3>
+  <div class="mt-2" *ngIf="!isCollapse" data-aos="fade-down">
+    {{gif.desc}}
+  </div>
+
+</div>

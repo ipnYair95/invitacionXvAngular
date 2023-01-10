@@ -1,0 +1,8 @@
+{
+  "name": "invitacion",
+  "productName": "invitacion",
+  "version": "1.0.0",
+  "description": "invitacion",
+  "main": "electron.prod.js",
+  "license": "MIT"
+}

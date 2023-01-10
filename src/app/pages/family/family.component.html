@@ -1,0 +1,15 @@
+<app-title id="familia" [title]="'&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;'"> </app-title>
+
+<div class="container-family" data-aos="fade-up">
+
+  <div class="title">
+    <i class="fas fa-crown"></i>
+    <br>
+    <p> Aquellos quienes les tengo mucho cariño</p>
+  </div>
+
+  <div class="cards-container">
+    <app-card [item]="card" *ngFor="let card of cards"> </app-card>
+  </div>
+
+</div>

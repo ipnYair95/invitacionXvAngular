@@ -1,0 +1,27 @@
+<section id="home" class="banner"  data-aos="zoom-in">
+  <div class="mt-5 flex-container" >
+    <p class="subtitle"> MIS XV AÑOS </p>
+    <p class="title"> Wendy Joselyne </p>
+    <br>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <b> Ceremonia en Puebla </b>
+        <p> {{ date1 | date: 'fullDate' }} </p>
+        <app-counter [finishDateString]="date1"></app-counter>
+      </div>
+      <div class="col-12 col-lg-6">
+        <b> Ceremonia en el Estado de México </b>
+        <p> {{ date2 | date: 'fullDate' }} </p>
+        <app-counter [finishDateString]="date2"></app-counter>
+      </div>
+    </div>
+    Click me
+    <br>
+    <a href="#fotos" class="btn btn-primary pulser">
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </a>
+    <br>
+  </div>
+
+</section>

@@ -1,0 +1,48 @@
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+
+figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 1rem;
+    width: 300px !important;
+    height: 250px !important;
+  }
+
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 250px;
+  height: 300px;
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+}
+
+
+@media (min-width: 992px) {
+  figure {
+    img {
+      width: 350px !important;
+      height: 250px !important;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  figure {
+    img {
+      width: 350px !important;
+      height: 350px !important;
+    }
+  }
+}

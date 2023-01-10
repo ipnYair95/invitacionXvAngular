@@ -1,0 +1,30 @@
+<ng-container *ngIf="!disabled; else elseTemplate">
+
+  <header>
+    <app-navbar> </app-navbar>
+  </header>
+
+  <app-stars></app-stars>
+
+  <div>
+    <audio controls autoplay style="display: none;">
+      <source src="./assets/music.mp3" type="audio/ogg">
+    </audio>
+    <app-banner></app-banner>
+    <app-fotos></app-fotos>
+    <app-family></app-family>
+    <app-gifs></app-gifs>
+    <app-mapa></app-mapa>
+  </div>
+
+  <br><br><br>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+
+
+</ng-container>
+<ng-template #elseTemplate>
+  <h1> 404 NOT FOUND </h1>
+</ng-template>
