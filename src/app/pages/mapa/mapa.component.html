@@ -7,46 +7,40 @@
     <br>
 
     <div class="btn-group-custom">
-      <button class="btn btn-primary"
-        [ngStyle]=" isPuebla === true ? { 'animation': '2s pulse2 infinite' } : { 'animation': 'none' } "
-        (click)="filter(true)"> Ver ceremonia de Puebla </button>
-      <button class="btn btn-primary"
-        [ngStyle]=" isPuebla === false ? { 'animation': '2s pulse2 infinite' } : { 'animation': 'none' } "
-        (click)="filter(false)"> Ver ceremonia de México </button>
+      <button class="btn btn-primary" [ngStyle]="  { 'animation': '2s pulse2 infinite' } " (click)="onClick()">
+        {{ isMisa ? 'Ver la fiesta' : 'Ver la misa' }}
+      </button>
     </div>
 
     <br>
 
-    <app-hr-text [text]="directions[indexDirection].title | uppercase" *ngIf="directions.length !== 0"> </app-hr-text>
+    <app-hr-text [text]="defaultDirections[indexDirection].title | uppercase" *ngIf="defaultDirections.length !== 0">
+    </app-hr-text>
 
-    <div class="row" *ngIf="directions.length !== 0" data-aos="fade-up">
+    <div class="row" *ngIf="defaultDirections.length !== 0" data-aos="fade-up">
 
       <div class="col-12 col-lg-6 ">
 
         <div class="content" data-aos="flip-left">
           <div>
-            <b>Fecha y Hora: </b>
-            <p> {{ directions[indexDirection].date }} </p>
+            <b>Hora: </b>
+            <p> {{ defaultDirections[indexDirection].date }} </p>
           </div>
 
           <div>
             <b>Lugar: </b>
-            <p> {{ directions[indexDirection].place }} </p>
+            <p> {{ defaultDirections[indexDirection].place }} </p>
           </div>
 
           <div>
             <b>Dirección: </b>
-            <p> {{ directions[indexDirection].direction }}</p>
+            <p> {{ defaultDirections[indexDirection].direction }}</p>
           </div>
 
-          <button class="btn btn-secondary" (click)=" setDirection()" *ngIf="isPuebla">
-            {{ directions[indexDirection].textChange }}
-          </button>
-
           <br>
           <br>
 
-          <img [src]=" directions[indexDirection].urlImage | safePipe " alt="">
+          <img [src]=" defaultDirections[indexDirection].urlImage | safePipe " alt="">
 
         </div>
 
@@ -54,7 +48,7 @@
       <div class="col-12 col-lg-6 ">
 
         <div class="container-map" data-aos="flip-left">
-          <iframe [src]=" directions[indexDirection].url | safePipe" width="300" height="300" style="border:0;"
+          <iframe [src]=" defaultDirections[indexDirection].url | safePipe" width="300" height="300" style="border:0;"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>

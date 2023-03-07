@@ -26,8 +26,8 @@ body{
 
 
 :root {
-  --color: rgb(255, 182, 120);
-  --color-transparent: rgb(255, 182, 120, 70%);
+  --color: #d29bfd;
+  --color-transparent: rgba(211, 155, 253, 0.70);
   --color-gray: #f5576c;
 }
 
@@ -110,13 +110,13 @@ section {
 
 @keyframes animation {
   0% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 

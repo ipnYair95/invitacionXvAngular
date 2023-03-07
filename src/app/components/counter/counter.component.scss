@@ -8,7 +8,6 @@ section{
 }
 
 .time-container {
-  width: 100%;
   color: #000;
   margin-top: 6px;
   font-weight: bold;
@@ -17,11 +16,11 @@ section{
   align-items: center;
   background-color: rgb(220 220 220 / 50%);
   margin-bottom: 10px;
-  padding: 5px 10px;
   font-size: 11px;
   width: 270px;
   height: auto;
-  border-radius: 25px;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .time {
@@ -29,7 +28,6 @@ section{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 0px 4px;
 
   span:first-child {
     font-size: 12px;
@@ -69,7 +67,7 @@ section{
     }
 
     span:last-child {
-      font-size: 12px;
+      font-size: 14px;
       padding: 3px;
     }
   }
@@ -82,11 +80,11 @@ section{
 @media (min-width: 992px) {
   .time {
     span:first-child {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     span:last-child {
-      font-size: 14px;
+      font-size: 18px;
       padding: 3px;
     }
   }
@@ -99,11 +97,11 @@ section{
 @media (min-width: 1200px) {
   .time {
     span:first-child {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     span:last-child {
-      font-size: 16px;
+      font-size: 20px;
       padding: 3px;
     }
   }

@@ -3,4 +3,17 @@ section{
   width: 100%;
   text-align: center;
   color: #fff;
+  animation: animation-footer 3s infinite;
+}
+
+@keyframes animation-footer {
+  0% {
+    font-size: 12px;
+  }
+  50% {
+    font-size: 14px;
+  }
+  100% {
+    font-size: 12px;
+  }
 }

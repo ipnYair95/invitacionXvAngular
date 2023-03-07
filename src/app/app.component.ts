@@ -11,7 +11,7 @@ import { DataService } from './services/data.service';
 export class AppComponent implements OnInit {
   title = 'invitacion';
 
-  disabled = true;
+  disabled = false;
 
   constructor(    private dataService: DataService){ }
 

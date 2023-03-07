@@ -7,12 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  date1 = '';
-  date2 = '';
+  date = '';
 
   constructor() {
-    this.date1 = new Date("17-Dec-2022").toLocaleString("en-US", { timeZone: "America/Mexico_City" });
-    this.date2 = new Date("7-Jan-2023").toLocaleString("en-US", { timeZone: "America/Mexico_City" });
+    this.date = new Date("April 22, 2023 16:00:00").toLocaleString("en-US", { timeZone: "America/Mexico_City" });
   }
 
   ngOnInit(): void {
