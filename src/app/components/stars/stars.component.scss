@@ -8,7 +8,7 @@
 
 .fa-star {
 	position: absolute;
-	color: rgb(150 160 133 / 50%);
+	color: var(--color-transparent);
 	animation: animate 3s infinite;
 }
 
