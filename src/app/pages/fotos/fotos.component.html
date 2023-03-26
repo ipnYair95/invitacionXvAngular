@@ -8,7 +8,7 @@
     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
 
       <div>
-        <img class="avatar" src="./assets/ella.jpg" alt="">
+        <img class="avatar" src="./assets/ella.jpeg" alt="">
         <br>
         <hr>
         <app-hr-text [text]="'Karla'  | uppercase"> </app-hr-text>
@@ -19,7 +19,7 @@
     </div>
     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
       <div>
-        <div class="text-center">
+        <div class="text-center summary">
           <p>Este es un paso más en mi vida y quiere compartirlo con cada uno de ustedes.</p>
           <p>
             Agradezco a las personas que me guiaron hasta el día de hoy y me enseñaron a ser aquella persona
@@ -46,7 +46,7 @@
 
 
   <swiper [config]="config">
-    <ng-template swiperSlide *ngFor="let photo of [1,2,3,4,5]">
+    <ng-template swiperSlide *ngFor="let photo of [1,2,3,4,5,6,7,8]">
       <figure class="img-container">
         <img [src]="'./assets/fotos/foto' + photo + '.jpg'">
       </figure>

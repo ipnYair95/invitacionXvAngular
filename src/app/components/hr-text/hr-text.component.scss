@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* To show the lines on right
@@ -20,4 +22,22 @@ and left sides of the text */
 
 .divider:not(:empty)::after {
   margin-left: 0.25em;
+}
+
+
+@media (min-width: 992px) {
+
+  .divider{
+    font-size: 20px;
+  }
+
+}
+
+
+@media (min-width: 1200xpx) {
+
+  .divider{
+    font-size: 24px;
+  }
+
 }
